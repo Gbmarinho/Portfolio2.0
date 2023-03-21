@@ -177,5 +177,120 @@ $(".git-hub").hover(
     }
 )
 
+$(".nav-exp button").click(function(e){
+    var name = $(this).attr('name');
+    var classes =  $(this).attr('class');
+    
+    if(name == "IC"){
+        if(classes != "button-nav active-button"){
+            $(".Lafeea").css("transform", "translate(0px)");
+            $(".embusca").css("transform", "translate(0px)");
+            $(".IntegraUerj").css("transform", "translate(0px)");
+            $(".vendas").css("transform", "translate(0px)");
+            $(".embusca").css("transition", '0s');
+            $(".Lafeea").css("transition", '0s');
+            $(".IntegraUerj").css("transition", '0s');
+            $(".vendas").css("transition", '0s');
+            $(".active-button").removeClass('active-button');
+            $(this).addClass('active-button');
+            $(".vendas").css("opacity", "0");
+            $(".embusca").css("opacity", "0");
+            $(".IntegraUerj").css("opacity", "0");
+            $(".Lafeea").css("opacity", "0");
+            $(".projetoIC").css("left", '-30px');
+            $(".projetoIC").css("transition", '0.3s');
+            $(".projetoIC").css("transform", "translate(30px)")
+            $(".projetoIC").css("opacity", "1");
+        }
+    }
+    if(name == "busca"){
+        if(classes != "button-nav active-button"){
+            $(".Lafeea").css("transform", "translate(0px)");
+            $(".projetoIC").css("transform", "translate(0px)");
+            $(".IntegraUerj").css("transform", "translate(0px)");
+            $(".vendas").css("transform", "translate(0px)");
+            $(".vendas").css("transition", '0s');
+            $(".Lafeea").css("transition", '0s');
+            $(".IntegraUerj").css("transition", '0s');
+            $(".projetoIC").css("transition", '0s');
+            $(".active-button").removeClass('active-button');
+            $(this).addClass('active-button');
+            $(".vendas").css("opacity", "0");
+            $(".projetoIC").css("opacity", "0");
+            $(".IntegraUerj").css("opacity", "0");
+            $(".Lafeea").css("opacity", "0");
+            $(".embusca").css("left", '-30px');
+            $(".embusca").css("transition", '0.3s');
+            $(".embusca").css("transform", "translate(30px)")
+            $(".embusca").css("opacity", "1");
+        }
+    }
+    if(name == "vendas"){
+        if(classes != "button-nav active-button"){
+            $(".Lafeea").css("transform", "translate(0px)");
+            $(".embusca").css("transform", "translate(0px)");
+            $(".IntegraUerj").css("transform", "translate(0px)");
+            $(".projetoIC").css("transform", "translate(0px)");
+            $(".embusca").css("transition", '0s');
+            $(".Lafeea").css("transition", '0s');
+            $(".IntegraUerj").css("transition", '0s');
+            $(".projetoIC").css("transition", '0s');
+            $(".active-button").removeClass('active-button');
+            $(this).addClass('active-button');
+            $(".embusca").css("opacity", "0");
+            $(".projetoIC").css("opacity", "0");
+            $(".IntegraUerj").css("opacity", "0");
+            $(".Lafeea").css("opacity", "0");
+            $(".vendas").css("left", '-30px');
+            $(".vendas").css("transition", '0.3s');
+            $(".vendas").css("transform", "translate(30px)")
+            $(".vendas").css("opacity", "1");
+        }
+    }
+    if(name == "Integra"){
+        if(classes != "button-nav active-button"){
+            $(".Lafeea").css("transform", "translate(0px)");
+            $(".embusca").css("transform", "translate(0px)");
+            $(".projetoIC").css("transform", "translate(0px)");
+            $(".vendas").css("transform", "translate(0px)");
+            $(".embusca").css("transition", '0s');
+            $(".Lafeea").css("transition", '0s');
+            $(".vendas").css("transition", '0s');
+            $(".projetoIC").css("transition", '0s');
+            $(".active-button").removeClass('active-button');
+            $(this).addClass('active-button');
+            $(".vendas").css("opacity", "0");
+            $(".embusca").css("opacity", "0");
+            $(".projetoIC").css("opacity", "0");
+            $(".Lafeea").css("opacity", "0");
+            $(".IntegraUerj").css("left", '-30px');
+            $(".IntegraUerj").css("transition", '0.3s');
+            $(".IntegraUerj").css("transform", "translate(30px)")
+            $(".IntegraUerj").css("opacity", "1");
+        }
+    }
+    if(name == "lafeea"){
+        if(classes != "button-nav active-button"){
+            $(".projetoIC").css("transform", "translate(0px)");
+            $(".embusca").css("transform", "translate(0px)");
+            $(".IntegraUerj").css("transform", "translate(0px)");
+            $(".vendas").css("transform", "translate(0px)");
+            $(".embusca").css("transition", '0s');
+            $(".vendas").css("transition", '0s');
+            $(".IntegraUerj").css("transition", '0s');
+            $(".projetoIC").css("transition", '0s');
+            $(".active-button").removeClass('active-button');
+            $(this).addClass('active-button');
+            $(".vendas").css("opacity", "0");
+            $(".embusca").css("opacity", "0");
+            $(".projetoIC").css("opacity", "0");
+            $(".IntegraUerj").css("opacity", "0");
+            $(".Lafeea").css("left", '-30px');
+            $(".Lafeea").css("transition", '0.3s');
+            $(".Lafeea").css("transform", "translate(30px)")
+            $(".Lafeea").css("opacity", "1");
+        }
+    }
+})
 
 typeWriter();
