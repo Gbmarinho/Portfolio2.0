@@ -9,6 +9,14 @@ a{
 body{
     font-family: "Inter";
 }
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #1b1b1b;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #00d2df;
+    border-radius: 5px;
+}
 .header{
     background-color: #151515;
     display: flex;
@@ -39,13 +47,13 @@ body{
 }
 .link-header{
     display: flex;
-    gap: 5vw;
+    gap: 2vw;
 }
 .link-header a{
     padding-top: 7px;
     color: white;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
 }
 .link-header a::after {
     content: "";
@@ -57,4 +65,227 @@ body{
 }
 .link-header a:hover::after{
     transform: scale(1);
+}
+
+
+
+#apresentacao{
+    padding-top: 77px;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 77px);
+}
+.content-apresentacao{
+    width: 70%;
+    color: #c4c4c4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text-apresentacao{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-weight: 500;
+}
+.text-apresentacao p{
+    font-size: 1.5rem;
+}
+.text-apresentacao span{
+    font-size: 3rem;
+    color: #00d2df;
+}
+.principal__input-cursor {
+    width: 3px;
+    height: 42px;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    animation: blink 0.6s infinite alternate;
+}
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+.right-content-apresentacao img{
+    width: 35vw;
+}
+.botoes-apresentacao{
+    display: flex;
+    gap: 30px;
+    margin-top: 5vh;
+}
+.botoes-apresentacao img{
+    width: 22px;
+}
+.button-azul{
+    background-color: transparent;
+    border: 2px solid #00d2df;
+    border-radius: 9px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 150px;
+    height: 48px;
+    font-size: 16px;
+    color: #c4c4c4;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.button-roxo{
+    background-color: transparent;
+    border: 2px solid  rgba(101, 24, 180, 1) ;
+    border-radius: 9px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 150px;
+    height: 48px;
+    font-size: 16px;
+    color: #c4c4c4;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.button-azul img, .button-roxo img{
+    width: 22px;
+} 
+.button-roxo:hover, .button-azul:hover{
+    background-color: #272727;
+    text-shadow: 1px 1px 3px #00bbc5;
+}
+#about-me{
+    background-color: #151515;
+    color: #c4c4c4;
+    display: flex;
+    justify-content: center;
+    
+}
+.content-about{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 55px;
+    padding: 6.5% 0;
+}
+.content-about > img{
+    border-left: 5px solid #00d2df;
+    filter: opacity(55%);
+    transition: 0.4s;
+   width: 290px;
+    transition: 0.3s;
+}
+.content-about > img:hover{
+    border-left: 5px solid #9355E2;
+    filter: opacity(100%);
+}
+.infos-about h2{
+    margin-bottom: 32px;
+}
+.infos-about h3{
+    margin-bottom: 14px;
+}
+.infos-about p{
+    margin-bottom: 32px;
+}
+#tecnologias{
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+}
+.content-tecn{
+    width: 70%;
+    padding: 80px 0;
+    display: grid;
+    grid-template-columns: 415px 1fr;
+    gap: 120px;
+}
+.right-content-tec{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.right-content-tec h2{
+    color: #c4c4c4;
+    font-size: 32px;
+}
+.content-blocos-tecn{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.blocos-horizontal-3{
+    display: flex;
+    gap: 40px;
+}
+.bloco-tec{
+    width: 115px;
+    height: 115px;
+    background-color: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    position: relative;
+}
+.bloco-tec img{
+    position: absolute;
+    transition: 0.5s;
+}
+.cssimg2, .gitimg2,.pythonimg2, .githubimg2, .htmlimg2, .jsimg2, .reactimg2, .javaimg2, .sqlimg2, .wordpressimg2, .phpimg2, .cplusimg2{
+    opacity: 0;
+    
+}
+.bloco-tec:hover{
+    transform: scale(1.07);
+    background-color: #1b1b1b;
+}
+.left-content-tec{
+    margin-top: 210px;
+    color: #c4c4c4;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+}
+.texto-html, .texto-css, .texto-js, .texto-react, .texto-wordpress, .texto-php, .texto-cplus, .texto-python, .texto-java, .texto-sql, .texto-git, .texto-github{
+    position:absolute;
+    top: 0;
+    display: none;
+
+}
+.texto-html h2, .texto-css h2, .texto-js h2, .texto-react h2, .texto-wordpress h2, .texto-php h2, .texto-cplus h2, .texto-python h2, .texto-java h2, .texto-sql h2, .texto-git h2, .texto-github h2{
+    margin-bottom: 20px;
+}
+#experiencia{
+    display: flex;
+    justify-content: center;
+    background-color: #151515;
+}
+.content-exp{
+    width: 70%;
+    display: grid;
+}
+.nav-exp{
+    display: flex;
+    flex-direction: column;
 }
