@@ -1,5 +1,16 @@
 let letter = 0;
 const text = '     Gabriel Marinho';
+let contadorMenu = 0;
+function animar(){
+    const btn = document.getElementById("btn-menu");
+    btn.classList.toggle('ativar');
+    if(contadorMenu % 2 == 0){
+        $(".menu-escondido").css("transform", "scale(1)");
+    }else{
+        $(".menu-escondido").css("transform", "scale(0)");
+    }
+    contadorMenu = contadorMenu +1;
+}
 
 function typeWriter() {
     if(letter < text.length) {
@@ -8,6 +19,25 @@ function typeWriter() {
         setTimeout(typeWriter, 180)
     }
 }
+$('.link-header a').click(function(e){
+    e.preventDefault();
+    var id = $(this).attr('href'), 
+        targetOffset = $(id).offset().top;
+    $('html, body').animate({
+        scrollTop: targetOffset - 75
+    }, 1000)
+})
+
+$('.menu-escondido a').click(function(e){
+    e.preventDefault();
+    var id = $(this).attr('href'), 
+        targetOffset = $(id).offset().top;
+    $('html, body').animate({
+        scrollTop: targetOffset - 75
+    }, 1000)
+})
+
+
 $(".html").hover(
     function(){
         $(".htmlimg1").css('opacity', '0');
