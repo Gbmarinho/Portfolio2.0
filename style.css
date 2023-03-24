@@ -482,7 +482,7 @@ footer span{
     top: calc(100px / 2);
     padding: 0 15px 10px 15px;
     background-color: #151515;
-    transform-origin: top;
+    transform-origin: top right;
     gap: 12px;
     transition: 0.5s;
     transform: scale(0);
@@ -598,5 +598,42 @@ footer span{
     }
     .link-header{
         display: none;
+    }
+}
+@media(max-width:600px){
+    .about-exp{
+        width: 100%;
+        margin-bottom: 250px;
+    }
+}
+@media(max-width:550px){
+    .bloco-projeto{
+        width: 85%;
+    }
+    .content-blocos-tecn{
+        gap: 20px;
+    }
+    .blocos-horizontal-3{
+        gap: 20px;
+    }
+    .bloco-tec {
+        width: 105px;
+        height: 105px;
+    }
+}
+@media(max-width:450px){
+    .about-exp{
+        width: 100%;
+        margin-bottom: 310px;
+    }
+}
+@media(max-width:410px){
+    .bloco-projeto{
+        width: 90%;
+    }
+    
+    .bloco-tec {
+        width: 92px;
+        height: 92px;
     }
 }
