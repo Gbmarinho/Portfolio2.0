@@ -246,12 +246,12 @@ body{
     justify-content: center;
     border-radius: 20px;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.4s;
     position: relative;
 }
 .bloco-tec img{
     position: absolute;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 .cssimg2, .gitimg2,.pythonimg2, .githubimg2, .htmlimg2, .jsimg2, .reactimg2, .javaimg2, .sqlimg2, .wordpressimg2, .phpimg2, .cplusimg2{
     opacity: 0;
@@ -513,16 +513,16 @@ footer span{
     padding:8px 0 5px 0;
     transform-origin: top;
     transform: scaleY(0);
-    transition: 0.3s;
+    transition: 0.4s;
     font-weight: 600;
-    background-color: #1b1b1b;
+    background-color: #151515;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     width: 100%;
     text-align: center;
 }
 .bloco-tec:hover p{
-    
+    background-color: #1b1b1b;
     transform: scaleY(1);
 }
 @media(max-width:950px){
