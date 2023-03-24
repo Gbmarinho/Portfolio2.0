@@ -5,9 +5,9 @@ function animar(){
     const btn = document.getElementById("btn-menu");
     btn.classList.toggle('ativar');
     if(contadorMenu % 2 == 0){
-        $(".menu-escondido").css("transform", "scale(1)");
+        $(".menu-escondido").css("transform", "scaleY(1)");
     }else{
-        $(".menu-escondido").css("transform", "scale(0)");
+        $(".menu-escondido").css("transform", "scaleY(0)");
     }
     contadorMenu = contadorMenu +1;
 }

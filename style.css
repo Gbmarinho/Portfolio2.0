@@ -485,7 +485,7 @@ footer span{
     transform-origin: top right;
     gap: 12px;
     transition: 0.5s;
-    transform: scale(0);
+    transform: scaleY(0);
     display: none;
 }
 .menu-escondido a{
@@ -500,7 +500,7 @@ footer span{
     border-bottom: 2px solid #00d2df;
     margin-top: 5px;
     transform-origin: left;
-    transform: scaleX(0);
+    transform: scale(0);
     transition: transform 0.3s ease;
 }
 .menu-escondido > a:hover::after{
