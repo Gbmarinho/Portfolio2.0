@@ -506,7 +506,25 @@ footer span{
 .menu-escondido > a:hover::after{
     transform: scale(1);
 }
-
+.bloco-tec p {
+    position: absolute;
+    bottom: -15px;
+    color: #c4c4c4;
+    padding:8px 0 5px 0;
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: 0.3s;
+    font-weight: 600;
+    background-color: #1b1b1b;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%;
+    text-align: center;
+}
+.bloco-tec:hover p{
+    
+    transform: scaleY(1);
+}
 @media(max-width:950px){
     .content-about, .content-apresentacao,.content-tecn, .content-header, .content-projetos,.content-exp{
         width: 80%;
@@ -611,7 +629,7 @@ footer span{
         width: 85%;
     }
     .content-blocos-tecn{
-        gap: 20px;
+        gap: 35px;
     }
     .blocos-horizontal-3{
         gap: 20px;
